@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Final App</title>
+</head>
+
+<body class="vsc-initialized">
+
+  <div class="container">
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <div class="card flex-md-row mb-4 box-shadow">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10">
+                <h1> Typeahead App </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-10">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Typeahead App Search</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <label for="typeahead-basic">Search for a state:</label>
+                    <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" />
+                    <hr>
+                    <pre>Model: {{ model | json }}</pre>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
